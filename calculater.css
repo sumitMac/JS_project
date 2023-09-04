@@ -1,69 +1,52 @@
-*{
-    box-sizing: border-box;
-}
-.main-container{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    background: #000;
-    height: 500px;
-    margin: 100px 200px;
+    align-items: center;
+    height: 100vh;
 }
-.result{
-    grid-area: a-result;
+
+.main-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
-.clear{
-    grid-area: a-clear;
-}
-.backspace{
-    grid-area:a-back;
-}
-.devide{
-    grid-area: a-devide;
-}
-.seven{
-    grid-area: a-seven;
-}
-.eight{
-    grid-area: a-eight;
-}
-.nine{
-    grid-area: a-nine;
-}
-.multi{
-    grid-area: a-multi;
-}
-.four{
-    grid-area: a-four;
-}
-.five{
-    grid-area: a-five;
-}
-.six{
-    grid-area:a-six;
-}
-.sub{
-    grid-area: a-sub;
-}
-.one{
-    grid-area: a-one;
-}
-.two{
-    grid-area: a-two;
-}
-.three{
-    grid-area: a-three;
-}
-.add{
-    grid-area: a-add;
-}
-.zero{
-    grid-area: a-zero;
-}
-.equal{
-    grid-area: a-equal;
-}
-.container{
+
+.container {
     display: grid;
-    grid-template-areas: "a-result a-result a-result a-result"
-                          "a-clear a-clear ";
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.result {
+    grid-column: span 4;
+    text-align: right;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.clear {
+    background-color: #ff4b4b;
+}
+
+button.equal {
+    background-color: #00c851;
 }
