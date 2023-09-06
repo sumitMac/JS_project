@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -10,10 +13,11 @@ body {
 }
 
 .main-container {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     overflow: hidden;
+   
 }
 
 .container {
@@ -21,6 +25,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     padding: 20px;
+    
 }
 
 .result {
@@ -36,11 +41,21 @@ body {
 button {
     font-size: 20px;
     padding: 10px;
+    background: hsl(238, 15%, 33%);
+    border-radius: 20px;
     border: none;
-    background-color: #444;
-    color: #fff;
     cursor: pointer;
-    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+   
+    
+}
+.front{
+    display: block;
+    padding: 6px 32px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    color: white;
+    transform: translateY(-6px);
 }
 
 button.clear {
@@ -49,4 +64,30 @@ button.clear {
 
 button.equal {
     background-color: #00c851;
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+.front:active{
+    transform: translateY(-2px);
+}
+@media screen and (max-width: 700px){
+    .container{
+        display: grid;
+        grid-gap: 1px;
+        padding: 1px;
+        
+   }
+   button{
+    padding: 1px;
+    height: auto;
+    
+   }
+   .front{
+    display: flex;
+    padding: 2px 12px;
+   }
+
+    
 }
