@@ -13,7 +13,7 @@ body {
 }
 
 .main-container {
-    background-color: #ffffff;
+    background-color: #eae66a;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     overflow: hidden;
@@ -31,7 +31,8 @@ body {
 .result {
     grid-column: span 4;
     text-align: right;
-    background-color: #eee;
+    background-color: #1b0b0b;
+    color: white;
     padding: 10px;
     font-size: 24px;
     border: 1px solid #ccc;
@@ -51,11 +52,14 @@ button {
 }
 .front{
     display: block;
-    padding: 6px 32px;
-    border-radius: 12px;
+    padding: 8px 26px;
     font-size: 1.25rem;
     color: white;
     transform: translateY(-6px);
+    margin: 10px;
+    width: 5px;
+    text-align: center;
+
 }
 
 button.clear {
@@ -72,7 +76,7 @@ button:active {
 .front:active{
     transform: translateY(-2px);
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 400px){
     .container{
         display: grid;
         grid-gap: 1px;

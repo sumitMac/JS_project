@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
    
     const updateScreen = () => {
         screen.textContent = currentInput || '0';
-    };
+    };  ``
   
     
     const handleNumberClick = (num) => {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 previousInput = '';
                 currentOperator = '';
                 updateScreen();
-            } else if (buttonValue === 'BackSpace') {
+            } else if (buttonValue === 'DEL') {
                 currentInput = currentInput.slice(0, -1);
                 updateScreen();
             }
